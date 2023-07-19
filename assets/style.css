@@ -3,3 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --sp-white: #ffffff;
+    --sp-black: #000000;
+    --sp-primary: #141922; --sp-light: #c1c1c1;
+    --sp-dark: #282828;
+    --sp-dark-soft: #727479;
+}
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
