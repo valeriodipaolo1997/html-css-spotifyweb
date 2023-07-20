@@ -49,7 +49,7 @@ img {
 }
 
 .page_bottom {
-    height: 90px;
+    height: 80px;
     background-color: var(--sp-dark-soft);
 }
 
@@ -144,6 +144,10 @@ h2 {
     flex-wrap: wrap;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
 /*#endregion utilities*/
 
 /*#region upgrade-bar*/
@@ -179,7 +183,7 @@ h2 {
 }
 
 .logo img{
-    width: 80%;
+    width: 75%;
 }
 
 
@@ -191,7 +195,7 @@ h2 {
 
 .menu i {
     padding-right: .5rem;
-    line-height: .8;
+   
 }
 
 .home, .search, .library{
@@ -200,7 +204,24 @@ h2 {
 
 .playlist{
     padding: 2rem 1rem;
+    
+   
 }
+
+.playlist-menu{
+    flex-direction: column;
+    align-items: start;
+    overflow: auto;
+    height: 220px;
+}
+
+.account img {
+    width: 20px;
+}
+
+
+
+
 
 /*#endregion side bar*/
 
