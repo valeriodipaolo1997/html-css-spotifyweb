@@ -10,6 +10,7 @@
     --sp-primary: #141922; --sp-light: #c1c1c1;
     --sp-dark: #282828;
     --sp-dark-soft: #727479;
+    --sp-success: #adff2f;
 }
 
 
@@ -33,18 +34,16 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 0 230px;
 
 }
 
 .upgrade-bar {
     height: 90px;
-
-    background-color: var(--sp-dark);
+    background-color: rgba(0, 0, 0, 0.493);
 }
 
 .principal {
-    width: 100%;
+    width:  calc(100% - 230px);
     height: calc(100vh - 90px);
     background-color: var(--sp-primary);
 }
@@ -73,13 +72,13 @@ h2 {
     padding-bottom: 1rem;
 }
 
-h4 {
+.card h4 {
     color: var(--sp-white);
     text-align: center;
     padding: 0.5rem 0;
 }
 
-h6 {
+.card h6 {
     color: var(--sp-dark-soft);
     text-align: center;
 }
@@ -107,8 +106,9 @@ h6 {
 /*#region utilities*/
 
 .container {
-    height: calc(100vh - 180px);
+    height: calc(100% - 90px);
     overflow: auto;
+    padding: 1rem;
 }
 
 .row {
@@ -120,7 +120,7 @@ h6 {
 
 .col-12 {
     width: calc(100% / 12 * 2);
-    height: 250px;
+    
     
 }
 
@@ -140,5 +140,90 @@ h6 {
     align-items: center;
 }
 
+.filters {
+    flex-wrap: wrap;
+}
+
 /*#endregion utilities*/
 
+/*#region upgrade-bar*/
+.upgrade-bar{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upgrade-btn{
+    border: 1px solid var(--sp-light);
+    border-radius: 30px;
+    padding: 0 2rem; 
+    
+}
+
+.upgrade-btn a{
+    color: white;
+}
+
+/*#endregion upgrade-bar*/
+
+/*#region side bar*/
+
+.side_bar, .menu{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.logo{
+    padding: 1rem;
+ 
+}
+
+.logo img{
+    width: 80%;
+}
+
+
+
+.home {
+    border-left: 2px solid var(--sp-success);
+    color: white;
+  }
+
+.menu i {
+    padding-right: .5rem;
+    line-height: .8;
+}
+
+.home, .search, .library{
+    padding: 0.2rem 1rem;
+}
+
+.playlist{
+    padding: 2rem 1rem;
+}
+
+/*#endregion side bar*/
+
+/*#region media query*/
+
+@media screen and (max-width: 1200px) {
+    .col-lg-2 {
+        width: calc(100% /12 * 3);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-md-3 {
+        width: calc(100% /12 * 6);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .side_bar{
+        width: 50px;
+    }
+    
+    .principal{
+        width: calc(100% - 50px);
+    }
+}
