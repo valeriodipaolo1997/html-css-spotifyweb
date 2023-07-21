@@ -26,6 +26,28 @@ img {
     display: flex;
 }
 
+.prova{
+    position: relative;
+}
+
+.prova::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 2px;
+    background-color: var(--sp-success);
+}
+
+.underline hr{
+   
+    border: 1px solid var(--sp-success);
+}
+
+
 .side_bar {
     width: 230px;
     height: calc(100vh - 90px);
@@ -362,6 +384,88 @@ button.plus {
   }
 
 
+/*#endregion pege bottom*/
+
+/*#region effects*/
+.side_bar a:hover h4{
+    color: var(--sp-white);
+}
+
+.side_bar a:hover .plus{
+    background-color: white;
+}
+.side_bar a:hover .home img {
+    filter: brightness(150%);
+}
+
+.side_bar a:hover .search img {
+    filter: brightness(150%);
+}
+
+.side_bar a:hover .library img {
+    filter: brightness(150%);
+}
+
+.side_bar a:hover .install img {
+    filter: brightness(150%);
+}
+
+.upgrade-btn:hover{
+    transform: scale(1.2);
+  
+}
+
+.filters a:hover{
+    color: var(--sp-white);
+}
+
+.card:hover img{
+ filter: brightness(60%);
+}
+
+
+.song-name:hover h5{
+    color: var(--sp-white);
+    text-decoration: underline;
+  }
+  
+  .fa-heart:hover, .fa-folder:hover, .fa-list-ul:hover, .fa-display:hover, .fa-volume-high:hover {
+    color: var(--sp-white);
+  }
+
+
+.length-bar:hover .handle, .volume-bar:hover .handle{
+    display: flex;
+}
+
+.length-bar:hover .live-time, .volume-bar:hover .live-volume{
+    background-color: var(--sp-success);
+}
+
+.main-play:hover{
+    transform: scale(1.2);
+}
+
+
+.wrapper {
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
+    font-size: 2rem;
+ 
+}
+
+.card:hover .overlay {
+    opacity: 1;
+  }
+
+
 /*#region media query*/
 
 @media screen and (max-width: 1200px) {
@@ -370,10 +474,27 @@ button.plus {
     }
 }
 
+@media screen and (max-width: 800px){
+    .volume-bar, .cover {
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .col-md-3 {
         width: calc(100% /12 * 6);
     }
+    .like{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .fa-folder{
+        padding: .5rem 0 0;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -384,4 +505,32 @@ button.plus {
     .principal{
         width: calc(100% - 50px);
     }
+
+    .principal{
+        width: calc(100% - 50px);
+    }
+
+    .menu, .account{
+        display: none;
+    }
+
+    .controls{
+        font-size: .8rem;
+        gap: 1rem;
+        padding: 1rem .5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 370px) {
+
+    .like, .queue{
+        display: none;
+    }
+
+    .settings{
+        gap: .5rem;
+    }
+
 }
