@@ -49,7 +49,7 @@ img {
 }
 
 .page_bottom {
-    height: 80px;
+    height: 90px;
     background-color: var(--sp-dark);
 }
 
@@ -267,12 +267,14 @@ button.plus {
 
 .page_bottom img{
     width: 50px;
-    margin-left: 1rem;
+    
+    
 }
 
 .player{
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
     
 }
 
@@ -301,6 +303,63 @@ button.plus {
 .fa-folder{
     padding-left: .6rem;
 }
+
+
+.controls{
+    padding: .5rem 0 1.5rem;
+    color: var(--sp-white);
+    gap: 1.5rem;
+}
+
+.main-play{
+    padding: 0 1rem;
+}
+
+
+.length h6{
+    color: var(--sp-white);
+}
+
+.length{
+    width: 40vw;
+}
+
+.length-bar{
+    width: 100%;
+}
+
+.length-bar, .volume-bar{
+    background-color: var(--sp-light);
+    border-radius: 15px;
+    
+}
+
+
+.volume-bar{
+    width: 5vw;
+  }
+  
+  .minute{
+      padding: 0 1rem;
+  }
+  
+  .settings{
+      gap: 1rem;
+  }
+  
+  .live-time, .live-volume{
+  
+      background-color: var(--sp-white);
+      width: 3vw;
+      height: .3rem;
+      border-radius: 15px;
+  }
+  
+  
+  
+  .settings{
+      color: var(--sp-white);
+  }
 
 
 /*#region media query*/
