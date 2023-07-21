@@ -172,6 +172,32 @@ h2 {
 
 /*#endregion utilities*/
 
+/* Mobile */
+.mobile-top, .mobile-bottom{
+    padding: .7rem;
+}
+
+.mobile-logo{
+    padding-bottom: 1rem;
+    filter: brightness(10000%);
+}
+
+.download{
+    width: 20px;
+}
+
+.mobile-home, .mobile-library{
+    padding-bottom: .5rem;
+}
+
+.circle{
+    padding-left: 2px;
+    padding-top: 1rem;
+}
+
+
+/* End Sidebar */
+
 /*#region upgrade-bar*/
 .upgrade-bar{
     justify-content: flex-end;
@@ -468,9 +494,23 @@ button.plus {
 
 /*#region media query*/
 
+
+@media screen and (max-width: 2500px) {
+    .col-lg-2 {
+        width: calc(100% /12 * 2);
+    }
+    .mobile-top, .mobile-bottom{
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 1200px) {
     .col-lg-2 {
         width: calc(100% /12 * 3);
+    }
+    .mobile-top, .mobile-bottom{
+        display: none;
     }
 }
 
@@ -493,6 +533,9 @@ button.plus {
 
     .fa-folder{
         padding: .5rem 0 0;
+    }
+    .mobile-top, .mobile-bottom{
+        display: none;
     }
 
 }
@@ -518,6 +561,10 @@ button.plus {
         font-size: .8rem;
         gap: 1rem;
         padding: 1rem .5rem;
+    }
+    .mobile-top, .mobile-bottom{
+        display: flex;
+        flex-direction: column;
     }
 }
 
