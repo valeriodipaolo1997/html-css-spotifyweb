@@ -22,31 +22,35 @@
                     <div class="logo">
                         <img src="./assets/img/logo.svg" alt="spotify">
                     </div>
-                    <a href="#">
+                    <a class="home-border" href="#">
                         <div class="home d-flex">
-                            <i class="fa-solid fa-house fa-lg"></i>
+                            <img width="20px" src="./assets/img/home.svg" alt>
                             <h4>Home</h4>
                         </div>
                     </a>
                     <a href="#">
                         <div class="search d-flex">
-                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                            <img width="20px" src="./assets/img/search.svg" alt>
                             <h4>Cerca</h4>
                         </div>
                     </a>
                     <a href="#">
                         <div class="library d-flex">
-                            <i
-                                class="fa-solid fa-lines-leaning fa-rotate-180 fa-lg"
-                                style="padding-right: .2rem; padding-left: .5rem;"></i>
+                            <img width="20px" src="./assets/img/libreria.svg"
+                                alt>
                             <h4>La tua libreria</h4>
                         </div>
                     </a>
 
-                    <div class="playlist">
+                    <div class="playlist d-flex flex-column">
                         <h4 class="title_menu">PLAYLIST</h4>
-                        <div class="plus">+</div>
-                        <div class="playlist-menu d-flex flex-column">
+                        <div class="plus_playlist">
+                            <button class="plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <a href="#">Crea Playlist</a>
+                        </div>
+                        <div class="playlist-menu d-flex">
                             <a href="#">Nome Playlist</a>
                             <a href="#">Nome Playlist</a>
                             <a href="#">Nome Playlist</a>
@@ -191,7 +195,23 @@
         </section>
 
         <section class="page_bottom">
-
+            <div class="player">
+                <div class="left d-flex align-items-center">
+                    <div class="cover">
+                        <img src="./assets/img/sinister.jpeg" alt="">
+                        
+                    </div>
+                    <div class="song">
+                        <h4>Sinister</h4>
+                        <a href="#"><h5>Brano nome</h5></a>
+                    </div>
+                    <div class="like">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                    
+                </div>
+            </div>    
         </section>
     </body>
 </html>
